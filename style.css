@@ -1,0 +1,176 @@
+:root {
+    --Blue: hsl(223, 87%, 63%);
+
+    --Pale-Blue: hsl(223, 100%, 88%);
+    --Light-Red: hsl(354, 100%, 66%);
+
+    --Gray: hsl(0, 0%, 59%);
+    --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    position: relative;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.main_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_logo {
+    width: 5.5em;
+    height: 1.75em;
+}
+
+.container_logo__img {
+    width: 100%;
+    height: auto;
+}
+
+.container_main_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_title__h1 {
+    font-size: 3em;
+    font-weight: 400;
+    color: var(--Gray);
+    margin: 30px 0 0 0;
+}
+
+.container_title__h1 strong {
+    color: var(--Very-Dark-Blue);
+}
+
+.container_subtitle__h3 {
+    font-weight: 500;
+    color: var(--Very-Dark-Blue);
+}
+
+.container_form {
+    margin: 1.25em 0 1.25em 0;
+}
+
+.input_container {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text] {
+    width: 25em;
+    border: 1px solid var(--Pale-Blue);
+    border-radius: 30px;
+    padding: 0.9375em 0 0.9375em 1.875em;
+    outline: none;
+}
+
+::placeholder {
+    color: var(--Pale-Blue);
+}
+
+.form_email {
+    display: flex;
+}
+
+.warning_message_invalid {
+    color: var(--Light-Red);
+    font-weight: 300;
+    font-style: italic;
+    width: auto;
+    z-index: -1;
+    position: absolute;
+    margin-left: 1.875em;
+} 
+
+.warning_message_empty {
+    color: var(--Light-Red);
+    font-weight: 300;
+    font-style: italic;
+    width: auto;
+    z-index: -2;
+    position: absolute;
+    margin-left: 1.875em;
+}
+
+.form_email__button {
+    width: 12.5em; 
+    background-color: var(--Blue);
+    box-shadow: 0px 6px 15px 1px rgba(80,125,240,0.44);
+    color: #fff;
+    border-radius: 30px; 
+    height: 3.1494em;
+    border: none;
+    margin-left: 0.9375em;
+    transition: 0.3s;
+}
+
+.form_email__button:hover {
+    opacity: 0.7;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container_dashboard {
+    width: 40.3125em;
+    height: 24.375em;
+    margin: 1.25em 0;
+}
+
+.container_dashboard__img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    margin-top: 4.0625em;
+}
+
+.container_footer {
+    display: flex;
+    justify-content: center;
+}
+
+/* Style all font awesome icons */
+.fa {
+    margin: 0 7px;
+    padding: 10px;
+    font-size: 15px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    border: 1px solid var(--Blue);
+}
+
+.fa-facebook, .fa-twitter, .fa-instagram {
+    color: var(--Blue);
+    background-color: white;
+    transition: 0.3s;
+}
+
+.fa-facebook:hover, .fa-twitter:hover, .fa-instagram:hover {
+    background-color: var(--Blue);
+    color: white;
+    transition: 0.3s;
+}
+
+.copyright h6 {
+    color: var(--Gray);
+    font-weight: 300;
+}

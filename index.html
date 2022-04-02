@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+
+  <title>Frontend Mentor | Ping coming soon page</title>
+</head>
+
+<body>
+  <main class="main">
+    <div class="main_container">
+
+
+      <div class="container_logo">
+        <img src="./images/logo.svg" alt="logo" class="container_logo__img">
+      </div>
+
+
+
+      <div class="container_main_title">
+        <div class="container_title">
+          <h1 class="container_title__h1">We are launching <strong>soon!</strong></h1>
+        </div>
+
+        <div class="container_subtitle">
+          <h3 class="container_subtitle__h3">Subscribe and get notified</h3>
+        </div>
+      </div>
+
+      <div class="container_form">
+        <form id="myForm" name="form1" action="#" class="form_email">
+          <div class="input_container">
+            <input type="text" name="text1" placeholder="Your email adress..." class="form_email__input">
+            
+            <div class="warning_message_invalid" style="opacity: 1;">
+              <p>Please provide a valid email address</p>
+            </div>
+            <div class="warning_message_empty" style="opacity:1">
+              <p>Whoops! It looks like you forgot to add your email</p>
+            </div>
+          </div>
+          <button type="submit" name="validation" value="validate" onclick="validateEmail(document.form1.text1)" class="form_email__button">Notify Me</button>
+        </form>
+      </div>
+
+
+      <div class="container_dashboard">
+        <img class="container_dashboard__img" src="./images/illustration-dashboard.png" alt="illustration-dashboard">
+      </div>
+
+
+
+      <footer>
+        <div class="container_footer">
+          <div class="share">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+          </div>
+        </div>
+
+        <div class="container_copyright">
+          <div class="copyright">
+            <h6>&copy; Copyright Ping. All rights reserved.</h6>
+          </div>
+        </div>
+        </section>
+
+  </main>
+</body>
+<script src="script.js"></script>
+</html>
